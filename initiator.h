@@ -1,7 +1,7 @@
 #ifndef INITIATOR_H
 #define INITIATOR_H
 
-#include "systemc.h"
+#include "systemc"
 using namespace sc_core;
 using namespace sc_dt;
 using namespace std;
@@ -112,8 +112,8 @@ SC_MODULE(Initiator)
   tlm_utils::tlm_quantumkeeper m_qk; // Quantum keeper for temporal decoupling
 
   // Internal data buffer used by initiator with generic payload
-  sc_ufixed_fast<4, 4> data[4];
-  sc_ufixed_fast<16, 16> result;
+  sc_fixed<4, 4> data[4];
+  sc_fixed<16, 16> result;
 };
 
 #endif

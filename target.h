@@ -75,8 +75,8 @@ SC_MODULE(Adder)
     trans.set_response_status( tlm::TLM_OK_RESPONSE );
   }
 
-  sc_ufixed_fast<4, 4> i_data[4];
-  sc_ufixed_fast<16, 16> sum;
+  sc_fixed<4, 4> i_data[4];
+  sc_fixed<16, 16> sum;
 };
 
 #endif
